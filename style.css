@@ -129,7 +129,7 @@ ul {
 .log-out {
   float: right;
   margin: 2%;
-  background: blue;
+  background: #3737b6;
   cursor: pointer;
   color: #fff;
   font-weight: 600;
@@ -241,9 +241,10 @@ ul {
   .log-out {
     float: right;
     margin: 2%;
-    color: blue;
+    background: #3737b6;
     cursor: pointer;
-    background: #ccc;
+    color: #fff;
+    font-weight: 600;
     padding: 5px;
     border-radius: 5px;
   }

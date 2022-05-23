@@ -7,7 +7,6 @@ const LoginScreen = ({ setShowHomePage }) => {
   const [showInvalidUser, setShowInvalidUser] = useState(false);
   const [apiFaling, setapiFaling] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [showPassword, setshowPassword] = useState(false);
   const loginSubmit = (e) => {
     e.preventDefault();
     const obj = {

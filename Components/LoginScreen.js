@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import SubmitAddRequest from '../services';
 const LoginScreen = ({ setShowHomePage }) => {
-  const [email, setEmail] = useState('eve.holt@reqres.in');
-  const [password, setPassword] = useState('cityslicka');
+  const [email, setEmail] = useState(null);
+  const [password, setPassword] = useState(null);
   const [isChecked, setIsChecked] = useState(false);
   const [showInvalidUser, setShowInvalidUser] = useState(false);
   const [apiFaling, setapiFaling] = useState(false);
@@ -19,11 +19,9 @@ const LoginScreen = ({ setShowHomePage }) => {
         if (response.error) {
           setShowInvalidUser(true);
           setIsChecked(false);
-          setLoading(false);
         } else {
           setShowHomePage(true);
           localStorage.setItem('token', response.token);
-          setLoading(false);
         }
       })
       .catch((error) => {

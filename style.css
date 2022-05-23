@@ -1,0 +1,306 @@
+.loginWraper {
+  width: 30%;
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 5px #3737b6;
+}
+.homescreenWrap {
+  width: 60%;
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px auto;
+}
+.inputlabel {
+  margin: 0px !important;
+  color: #131313;
+}
+.inputWraper {
+  margin-bottom: 20px;
+}
+
+.loginButton {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #3737b6;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  outline: 0;
+  cursor: pointer;
+}
+.formInput {
+  width: 94%;
+  padding: 15px;
+  border-radius: 5px;
+  /* outline: none; */
+  color: #3737b6;
+  border: 1px solid gray;
+}
+
+.checkBoxWrap > p {
+  display: inline-block;
+  vertical-align: top;
+}
+.checkboxinput {
+  width: 20px;
+  height: 20px;
+}
+.checkBox {
+  width: 7%;
+}
+.checkBoxlabel {
+  width: 90%;
+  color: gray;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.buttn-enabled {
+  background: #3737b6;
+  border: none;
+  width: 100%;
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.buttn-disabled {
+  background: #c3c3c3;
+  border: none;
+  width: 100%;
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.errorMesage {
+  border: 1px solid red;
+  margin: 10px 0px;
+  border-radius: 8px;
+}
+
+.errorMesage > p {
+  margin: 0px !important;
+  padding: 5px;
+  text-align: centers;
+  color: red;
+}
+
+.SucessMesage {
+  border: 2px solid green;
+  margin: 10px 0px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.SucessMesage > p {
+  margin: 0px !important;
+  padding: 10px;
+  font-weight: bold;
+  text-align: centers;
+  color: green;
+}
+.heading {
+  font-weight: bold;
+  color: #131313;
+}
+
+.user-list {
+  width: 96%;
+  list-style: none;
+  padding: 10px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: capitalize;
+  margin: 5px 0px;
+}
+ul {
+  margin: 0px !important;
+  padding: 10px 0px;
+}
+
+.log-out {
+  float: right;
+  margin: 2%;
+  color: blue;
+  cursor: pointer;
+  background: #ccc;
+  padding: 5px;
+  border-radius: 5px;
+}
+.logo {
+  width: 20%;
+  background: #eee;
+  border: 2px solid #eee;
+}
+.activeTab {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  background-color: #3737b6;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  width: 30%;
+  text-align: center;
+  border: 1px solid #eee;
+}
+.tab {
+  width: 33%;
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  background-color: #ccc;
+  color: #000;
+  cursor: pointer;
+  border: 1px solid #eee;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.userText {
+  color: #3737b6;
+}
+.user-list > p {
+  display: inline-block;
+  width: 25%;
+  margin: 0px;
+  text-align: center;
+  color: #fff;
+}
+.user-list-head {
+  width: 96%;
+  list-style: none;
+  padding: 10px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 5px 0px;
+  border: 1px solid #ccc;
+  background: #eee;
+}
+
+.user-list-head > p {
+  display: inline-block;
+  width: 25%;
+  margin: 0px;
+  text-align: center;
+}
+.address {
+  width: 30%;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 780px) {
+  .loginWraper {
+    width: 85%;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 5px #3737b6;
+  }
+  .loginButton {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    background: #3737b6;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    outline: 0;
+    cursor: pointer;
+  }
+  .formInput {
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    color: #3737b6;
+    border: 1px solid gray;
+  }
+  .checkBox {
+    width: 10%;
+  }
+  .checkBoxlabel {
+    width: 90%;
+    color: gray;
+  }
+  .checkboxinput {
+    width: 15px;
+    height: 15px;
+  }
+  .log-out {
+    float: right;
+    margin: 2%;
+    color: blue;
+    cursor: pointer;
+    background: #ccc;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .logo {
+    width: 40%;
+    /* margin-left: 3%; */
+    background: #eee;
+    border: 2px solid #eee;
+  }
+  .homescreenWrap {
+    width: 90%;
+    padding: 10px;
+    background-color: #fff;
+    margin: 10px auto;
+  }
+  .activeTab {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    background-color: #3737b6;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    width: 25%;
+    text-align: center;
+  }
+  .tab {
+    width: 33%;
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+    border: 1px solid #eee;
+    text-align: center;
+  }
+  .user-list {
+    width: 92%;
+    list-style: none;
+    padding: 10px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: capitalize;
+    margin: 5px 0px;
+  }
+  .user-list-head {
+    width: 92%;
+    list-style: none;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: 5px 0px;
+    border: 1px solid #ccc;
+    background: #eee;
+  }
+  .address {
+    margin-top: 20px;
+    width: 60%;
+  }
+}

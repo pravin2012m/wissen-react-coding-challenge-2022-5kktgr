@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import SubmitAddRequest from '../services';
 const LoginScreen = ({ setShowHomePage }) => {
-  const [email, setEmail] = useState(null);
-  const [password, setPassword] = useState(null);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [isChecked, setIsChecked] = useState(false);
   const [showInvalidUser, setShowInvalidUser] = useState(false);
   const [apiFaling, setapiFaling] = useState(false);

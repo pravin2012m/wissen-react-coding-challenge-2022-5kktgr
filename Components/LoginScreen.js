@@ -103,12 +103,12 @@ const LoginScreen = ({ setShowHomePage }) => {
           <div className="inputWraper">
             <button
               className={
-                isChecked && email !== null && password !== null
+                isChecked && email !== '' && password !== ''
                   ? 'buttn-enabled'
                   : 'buttn-disabled'
               }
               disabled={
-                isChecked && email !== null && password !== null ? false : true
+                isChecked && email !== '' && password !== '' ? false : true
               }
             >
               Next

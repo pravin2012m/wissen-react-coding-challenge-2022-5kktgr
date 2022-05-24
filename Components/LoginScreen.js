@@ -7,25 +7,29 @@ const LoginScreen = ({ setShowHomePage }) => {
   const [showInvalidUser, setShowInvalidUser] = useState(false);
   const [apiFaling, setapiFaling] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [loginloading, setLoginloading] = useState(false);
   const loginSubmit = (e) => {
     e.preventDefault();
     const obj = {
       email: email,
       password: password,
     };
-    setLoading(true);
+    setLoginloading(true);
     SubmitAddRequest('https://reqres.in/api/login', obj)
       .then((response) => {
         if (response.error) {
           setShowInvalidUser(true);
           setIsChecked(false);
+          setLoginloading(false);
         } else {
           setShowHomePage(true);
+          setLoginloading(false);
           localStorage.setItem('token', response.token);
         }
       })
       .catch((error) => {
         setapiFaling(true);
+        setLoginloading(false);
         setIsChecked(false);
       });
   };
@@ -90,10 +94,11 @@ const LoginScreen = ({ setShowHomePage }) => {
             </p>
             <p className="checkBoxlabel">
               By creating or loging into an account, you are agreeging with our
-              <strong> Terms & Conditions </strong>and{' '}
+              <strong> Terms & Conditions </strong>and
               <strong>Privacy Policys</strong>
             </p>
           </div>
+          <div>{loginloading && <p>Loading...</p>}</div>
 
           <div className="inputWraper">
             <button

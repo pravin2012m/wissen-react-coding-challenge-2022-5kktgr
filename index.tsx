@@ -13,7 +13,12 @@ const App = () => {
           {!showHomePage ? (
             <LoginScreen setShowHomePage={setShowHomePage} />
           ) : (
-            <HomeScreen logout={() => setShowHomePage(false)} />
+            <HomeScreen
+              logout={() => {
+                setShowHomePage(false);
+                localStorage.removeItem('token');
+              }}
+            />
           )}
         </div>
       </div>

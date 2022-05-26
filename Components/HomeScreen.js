@@ -59,7 +59,7 @@ function HomeScreen({ logout }) {
               <li
                 className={selectedTab === tab.value ? 'activeTab' : 'tab'}
                 tab={tab.value}
-                onClick={(e) => {
+                onClick={() => {
                   setselectedTab(tab.value);
                   setslectedTabContent(tab.navigateTo);
                 }}

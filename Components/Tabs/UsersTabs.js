@@ -22,14 +22,10 @@ const UsersTabs = () => {
 
   const userList =
     users.length > 0 &&
-    users.map((user) => {
+    users.map((user, i) => {
       return (
         <>
-          <li
-            className="user-list"
-            style={{ background: user.color }}
-            key={user.id}
-          >
+          <li className="user-list" style={{ background: user.color }} key={i}>
             <p> {user.id}</p>
             <p> {user.name}</p>
             <p> {user.year}</p>
